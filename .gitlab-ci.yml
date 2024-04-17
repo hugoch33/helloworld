@@ -1,3 +1,8 @@
 stages:
   - hello_world
 
+job_hello_world:
+  stage: hello_world
+  image: alpine:latest
+  scripts:
+  - echo "Hello , world!"
